@@ -1,0 +1,84 @@
+/* stylelint-disable */
+
+#meet-the-guys{
+
+    h2 {
+        font-size: var(--h2font);
+        margin-bottom:1rem;
+    }
+
+    margin-top: var(--mtop);
+
+
+    .mtg {
+
+        &__img{
+
+            &-img{
+
+                display: block;
+                margin:0 auto;
+                width:100%;
+                max-width:32rem;
+                cursor:pointer;
+            }
+
+            
+        }
+
+    }
+
+
+    //guys
+    --gname : 1.8rem;
+    --gdesc : .7rem;
+    --padguy : 1rem;
+
+    @media screen and (min-width:767px) {
+        --gname : 2rem;
+        --gdesc : 1rem;
+
+        --padguy : 3rem;
+
+    }
+
+    .guy {
+
+        padding:var(--padguy);
+
+        @media screen and (min-width:992px) {
+            max-width:700px;
+            margin:auto;
+        }
+
+
+        &__name{
+            font-size:var(--gname);
+            color:$secondary;
+            text-transform: uppercase;
+        }
+
+        &__description{
+            font-size:var(--gdesc);
+            color:$white-custom;
+        }
+
+        #soc__links{
+            margin: 1rem 0;
+            list-style-type: none;
+            color:$secondary;
+            padding:0;
+
+            a{
+                color:$secondary;
+                text-decoration: none;
+                font-family: "gotham";
+                font-weight:500;
+            }
+
+        }
+
+    }//end guy
+
+
+}

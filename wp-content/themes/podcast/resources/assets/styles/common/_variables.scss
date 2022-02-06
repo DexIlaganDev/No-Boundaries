@@ -1,0 +1,28 @@
+/** Import Bootstrap functions */
+
+/* stylelint-disable */
+
+$primary: #0b0b0b;
+$secondary: #98f14a;
+$white-custom : #eeeeee;
+$gray-custom : #bcbcbc;
+
+$nav-link-color: #fff;
+$nav-link-hover-color : $secondary;
+
+$body-color: #0b0b0b;
+
+$btn-border-radius:      0rem;
+$card-border-radius: 0rem;
+
+
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Slick Carousel font path
+$slick-font-path: "~slick-carousel/slick/fonts/";
+
+// Slick Carousel ajax-loader.gif path
+$slick-loader-path: "~slick-carousel/slick/";
+

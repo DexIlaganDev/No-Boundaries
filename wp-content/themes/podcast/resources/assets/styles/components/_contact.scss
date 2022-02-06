@@ -1,0 +1,79 @@
+/* stylelint-disable */
+#contact{
+    
+    
+
+    position: relative;
+    &:before{
+        content:" ";
+        background-image:url('/wp-content/themes/podcast/resources/assets/images/06-BG-wavy-green-lines-1.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        position: absolute;
+        top:-40%;
+        left:0;
+        right:-40%;
+        bottom:0%;
+        z-index:-1;
+        background-position: right;
+    }
+
+
+    padding-top:var(--sectionpadding);
+    padding-bottom:var(--sectionpadding);
+
+
+    --cardtext : 0.875em;
+    --cardpadding: 0em 2em;
+
+
+    @media screen and (min-width:992px) {
+        --cardpadding: 0em 3em;
+    }
+
+    .contact{
+
+        &__card{
+            padding:var(--cardpadding);
+            border-radius:1rem;
+
+            @media screen and (min-width: 767px) {
+                height:calc( 100% - 4.56rem );
+            }
+
+            @media screen and (min-width: 992px) {
+                height:calc( 100% - 4.56rem );
+            }
+
+
+            &-header{
+                padding:0;
+            }
+
+            &-body{
+                padding:0;
+            }
+
+            &-text{
+                font-size:var(--cardtext);
+                margin:0rem 0rem;
+            }
+
+            &-title{
+                font-size:.938rem;
+                margin:0rem;
+            }
+
+        }
+
+        
+
+    }
+
+
+    .form-control{
+        padding: 0.625rem .75rem;
+    }
+
+
+}

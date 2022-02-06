@@ -1,0 +1,305 @@
+/* stylelint-disable */
+* {
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    /** h2 headings  **/
+    --h2font : 1.5rem;
+    --articlefont: .775rem;
+
+    /** h3 headings **/
+    --h3font : 1.2rem;
+
+    /** h4 headings **/
+    --h4font : 1.5rem;
+
+
+    /** section spaces **/
+    --mtop : 1rem;
+
+    /** 80% **/
+    --wnarrow : 100%;
+
+    /** basic padding **/
+    --basicpadding : 1rem;
+    /** end basic padding **/
+
+    /** section paddings **/
+    --sectionpadding :2.5rem;
+    /** end section paddings **/
+
+    /** Start Maintenance **/
+    @media screen and (min-width:375px) {
+        --h2font: 1.8rem; 
+        --h3font : 1.3rem;
+    }
+
+    @media screen and (min-width:576px) {
+        --h2font: 2rem; 
+        --h3font : 1.5rem;
+
+        --articlefont: .975rem;
+    }
+
+    @media screen and (min-width:767px){
+        --h2font : 2.5rem;
+        --h3font : 2rem;
+        --h4font : 2rem;
+
+        --mtop : 2rem;
+
+        --sectionpadding :2.5rem;
+        
+
+    }
+
+    @media screen and (min-width:992px){
+        --h2font : 2.5rem;
+        --mtop : 2.5rem;
+        --wnarrow : 90%;
+
+        --basicpadding : 0rem;
+        
+
+        --sectionpadding :3rem;
+    }
+
+    @media screen and (min-width:1200px) {
+        --h2font : 2.5rem;
+        --mtop : 3rem;
+
+
+        --sectionpadding :4rem;
+    }
+    @media screen and (min-width:1400px) {
+        --h2font : 2.5rem;
+        --mtop : 5rem;
+
+
+        --sectionpadding :5rem;
+    }
+    /** End maintenance **/
+
+
+}
+
+
+#main {
+    overflow: hidden;
+}
+
+
+h1,h2,h3,h4,h5,p{
+    margin:0;
+}
+
+@font-face {
+    font-family: "gotham";
+    src: url('/wp-content/themes/podcast/resources/assets/fonts/gotham-book.otf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "gotham";
+    src: url('/wp-content/themes/podcast/resources/assets/fonts/gotham-medium.otf');
+    font-weight:500;
+}
+
+@font-face {
+    font-family: "gotham";
+    src: url('/wp-content/themes/podcast/resources/assets/fonts/gotham-bold.otf');
+    font-weight:700;
+}
+
+
+@font-face {
+    font-family: "bebas";
+    src: url('/wp-content/themes/podcast/resources/assets/fonts/BEBASNEUE.otf');
+    font-weight:normal;
+}
+
+body{
+    background-color: $primary;
+    font-family: "gotham";
+    font-weight:normal;
+
+    padding-top: 6.875rem;
+}
+
+
+
+/**  Helpers **/
+.nb-border-radius {
+    border-radius: 0.625rem;
+}
+
+.separator{
+    height:1px;
+    background-color: $gray-custom;
+    opacity: .5;
+}
+
+.gotham-normal{
+    font-family: 'gotham' !important;
+    font-weight:400 !important;
+}
+
+.gotham-medium{
+    font-family: 'gotham' !important;
+    font-weight:500 !important;
+}
+
+.gotham-bold{
+    font-family: 'gotham' !important;
+    font-weight:bold !important;
+}
+.bebas{
+    font-family:'bebas' !important;
+    font-weight:normal;
+}
+
+.py-custom-1{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+.h2{
+    font-size:var(--h2font);
+}
+
+.h4{
+    font-size:var(--h4font);
+}
+
+
+.article-font{
+    font-size: var(--articlefont);
+}
+
+/**  End Helpers **/
+
+
+/** NAVIGATION **/
+
+nav.navbar{
+    padding:1rem 0;
+    
+
+    @media screen and (min-width:767px){
+        padding: 1.5rem 0 1rem 0;
+    }
+
+}
+
+
+.navbar-toggler{
+
+    padding:0.25rem 0.75rem;
+    background-color:$secondary;
+
+    &-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+}
+
+
+.navbar-brand{
+
+    @media screen and (min-width:991px) {
+        padding-top:0;
+        padding-bottom:0;
+    }
+
+    img{    
+        max-width:150px;
+        @media screen and (min-width:767px){
+            max-width:201px;
+        }
+        
+    }
+
+}
+
+
+.btn-cta{
+
+    &--contact{
+        border-radius:40rem;
+        border-radius: 40rem;
+        padding: 0.475em 1.8em;
+    }
+
+}
+
+
+#navbarSupportedContent{
+    text-align: center;
+    margin-top:1rem;
+
+
+    @media screen and (min-width:992px){
+        text-align:start;
+        margin-top:0;
+    }
+
+}
+
+
+.nav{
+  
+    &-link{
+        padding:.4rem 0rem;
+        font-size:.875rem;
+
+        @media screen and (min-width:992px) {
+            padding:0rem;
+        }
+
+    }
+
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    @media screen and (min-width:992px) {
+        padding:0rem;
+        margin:0rem 1rem;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin:0rem 1.3rem;
+    }
+
+    @media screen and (min-width:1400px) {
+        margin:0rem 1.3rem;
+    }
+}
+
+
+/** END NAVIGATION **/
+
+
+/** HERO **/
+@import "components/hero";
+/** END HERO **/
+
+/** HITTER **/
+@import "components/hitter";
+/** END HITTER **/
+
+/** MEET **/
+@import "components/meettheguys";
+/** END MEET **/
+
+/** EPISODES **/
+@import "components/episodes";
+/** END EPISODES **/
+
+
+/** EPISODES **/
+@import "components/contact";
+/** END EPISODES **/

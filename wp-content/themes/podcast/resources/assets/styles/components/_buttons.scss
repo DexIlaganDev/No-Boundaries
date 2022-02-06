@@ -1,0 +1,13 @@
+/* stylelint-disable */
+.btn-green {
+    @include button-variant(#98f14a, #98f14a, #0b0b0b);
+}
+
+.btn-dark-green {
+    @include button-variant(#7dc93a, #7dc93a, #fff);
+}
+
+
+.btn-light{
+    @include button-variant(#ffffff, #ffffff, #0b0b0b);
+}
