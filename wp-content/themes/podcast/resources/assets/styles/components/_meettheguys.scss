@@ -81,6 +81,25 @@
     }//end guy
 
 
+    //overlay
+    .mtg__bottom__overlay.active{
+
+        display:none;
+
+        @media screen and (min-width:992px) {
+
+            //display: block;
+            position: fixed;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: rgba(255,165,0,.75);
+            min-height: 10vh;
+            padding:3rem;
+        }
+
+    }
+
 }
 
 
@@ -257,7 +276,7 @@
 
             transform : translateX( 50px );
             opacity:0;
-            transition : 500ms transform ease;
+            transition : 800ms transform ease;
             transition-delay: 100ms;
 
             @media screen and ( min-width: 992px) {

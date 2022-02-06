@@ -1,6 +1,18 @@
 /* stylelint-disable */
 #contact{
     
+    form {
+        > * br{
+            display: none;
+        }
+
+    }
+
+    .wpcf7 form.sent .wpcf7-response-output{
+        color:#fff;
+        background-color: $primary;
+        padding:2rem;
+    }
     
 
     position: relative;

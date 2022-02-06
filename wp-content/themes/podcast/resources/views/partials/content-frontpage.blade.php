@@ -233,6 +233,9 @@
             </div>
         </div>
     </div>
+
+    <!-- overlay -->
+    <div class="mtg__bottom__overlay active"></div>
 </section>
 <!-- END MEET THE GUYS -->
 
@@ -315,34 +318,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 order-md-last">
-                <section>
-                            
-                        <!-- contact form -->
-                        <form action="">
-                            <section class="main-fields">
-                                <div class="mb-3">
-                                    <label for="name_field" class="form-label d-none">Name</label>
-                                    <input type="text" class="form-control" id="name_field" placeholder="Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="contact_field" class="form-label d-none">Contact Number</label>
-                                    <input type="text" class="form-control" id="contact_field" placeholder="Contact Number">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email_field" class="form-label d-none">Email Address</label>
-                                    <input type="email" class="form-control" id="email_field" placeholder="E-mail Address">
-                                </div>
-                                <div class="mb-3 mb-md-0">
-                                    <label for="message_field" class="form-label d-none">Message</label>
-                                    <textarea class="form-control" id="message_field" rows="5" placeholder="Message"></textarea>
-                                </div>
-                            </section>
-                            <div class="col-12 mt-4">
-                                <button class="d-block btn btn-secondary mx-auto ms-md-auto me-md-0" type="submit">SUBMIT ENQUIRY <i class="ms-3 fas fa-chevron-right"></i></button>
-                            </div>
-                        </form>
-
-                </section>
+                @include('partials.content-contact')
             </div>
             <div class="col-md-6">
                 <section class="mt-4 mt-md-0 h-100">
@@ -373,9 +349,6 @@
     </div>
 </section>
 <!-- END CONTACT -->
-
-
-
 
 
 
