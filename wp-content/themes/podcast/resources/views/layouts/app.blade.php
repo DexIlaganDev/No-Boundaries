@@ -9,6 +9,7 @@
       <div class="content">
         <main class="main">
           @yield('content')
+          @include('partials.outside')
         </main>
         @if (App\display_sidebar())
           <aside class="sidebar">

@@ -10,7 +10,7 @@ import 'slick-carousel/slick/slick.min';
 // import then needed Font Awesome functionality
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 
-import { faSearch, faChevronRight, faPodcast } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faChevronRight, faPodcast, faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 
 // add the imported icons to the library
@@ -18,6 +18,8 @@ library.add(faSearch);
 library.add(faPodcast);
 library.add(faChevronRight);
 library.add(faSpotify);
+library.add(faLongArrowAltRight);
+library.add(faLongArrowAltLeft);
 
 // tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
 dom.watch();
@@ -59,6 +61,30 @@ jQuery( document ).ready( () => {
       e.preventDefault();
       showProfile(item);
     });
+  });
+
+
+  //full user guys slick 
+  jQuery('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed : 6000,
+    infinite: true,
+    speed: 1000,
+    fade: true,
+    cssEase: 'linear',
+    pauseOnHover : false,
+    pauseOnFocus : false,
+    adaptiveHeight: true,
+    nextArrow : '.mtg__next',
+    prevArrow : '.mtg__previous',
+  })
+
+  // On before slide change
+  jQuery('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    console.log(nextSlide);
   });
 
 

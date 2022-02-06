@@ -118,43 +118,116 @@
 <!-- END HARD HITTER -->
 
 
+
 <!-- MEET THE GUYS -->
 <section id="meet-the-guys" class="mtg">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col mtg__column">
 
+                    
                     <section>
                         <h2 class="text-secondary text-center">Meet The Guys</h2>
                         <div class="separator"></div>    
-                        <div class="mtg mtg__dsc">
+                        
 
-                            <div class="guy">
-                                <div id="guy-name" class="guy__name bebas"></div>
-                                <article id="guy-desc" class="guy__description "></article>
-                                <div class="soc">
-                                    <ul class="text-secondary" id="soc__links"></ul>
-                                </div>
-                            </div>
-
+                        <section class="text-white mtg__section">
                             
-                            <div class="mtg__img">
-                            <svg class="mtg__img-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1116 605">
-                                <image class="" width="1116" height="605" xlink:href="@asset('images/07-Team-Photo.png')"></image> 
-                                <a class="theguy" id="user_a" xlink:href="#">
-                                    <rect x="0" y="0" fill="#fff" opacity="0" width="354" height="593"></rect>
-                                </a>
-                                <a class="theguy" id="user_b" xlink:href="#">
-                                    <rect x="357" y="1" fill="#fff" opacity="0" width="369" height="592"></rect>
-                                </a>
-                                <a class="theguy" id="user_c" xlink:href="#">
-                                    <rect x="728" y="2" fill="#fff" opacity="0" width="388" height="593"></rect>
-                                </a>
-                            </svg>
-                                <!-- <img src="@asset('images/07-Team-Photo.png')" class="mtg__img-img" alt=""> -->
-                            </div>
+                            <button class="mtg__previous"><i class="fas fa-long-arrow-alt-left"></i></button>
+                            <button class="mtg__next"><i class="fas fa-long-arrow-alt-right"></i></button>
 
-                        </div>
+                            <div class="slider slider-for mtg__slider">
+
+                                <div class="d-flex flex-row">
+                                    <div class="guy__main">
+                                        <div class="guy__main-name">
+                                            <h3 class="guy__name bebas">James Frawley</h3>
+                                            <img src="@asset('/images/04-LP-Head-James.png')" class="mx-auto" alt="slide-image" >
+                                        </div>
+                                        
+                                        <article>
+                                            <p>At the 2015 Malaysian Open, James Frawley, who was then only 21,  made his ATP main draw debut in the doubles draw, pairing with Nick Kyrgios. In October 2016, Frawley achieved his career high ATP singles ranking of 606. He also holds a career high ATP doubles ranking of 735 acquired by the end of the same month. Frawley is currently at 920 at the ATP ranking.</p>
+                                        </article>
+                                        <div class="soc">
+                                            <ul>
+                                                <li><a target="_blank" href="https://www.instagram.com/james_frawley">@james_frawley</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__img__wrapper">
+                                        <img src="@asset('/images/tennis.png')" alt="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+
+                                <div class="d-flex flex-row">
+                                    <div class="guy__main">
+                                        <div class="guy__main-name">
+                                            <h3 class="guy__name bebas">Nick Kyrgios</h3>
+                                            <img src="@asset('/images/03-LP-Head-Nick.png')" class="mx-auto" alt="slide-image" >
+                                        </div>
+                                        <article>
+                                            <p>The former World No. 1 junior broke into the ATP Top 50 at the young age of 19 in 2015. In the same year, he was able to make it to the Australian Open QF, becoming the youngest quarter-finalist at his home Grand Slam event, a recognition formerly held by Andrei Cherkasov back in 1990.
+                                            <br><br>
+                                        </article>
+                                        <article>
+                                            <p>By 2016, he reached the No. 13 spot. In 2014 at Wimbledon, he shocked the crowd as he bested Rafael Nadal who then ranked No. 1; Kyrgios was at 144. He went on to beat Federer in Madrid in 2015 and Djokovic in 2017, Acapulco. He bagged the 1st ATP Masters 1000 final in 2017 in Cincinnati and the 2nd of 3 ATP 500 titles in 2019 in Acapulco.</p>
+                                        </article>
+                                        <div class="soc">
+                                            <ul>
+                                                <li><a target="_blank" href="https://www.instagram.com/k1ngkyrg1os">@k1ngkyrg1os</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__img__wrapper">
+                                        <img src="@asset('/images/tennis.png')" alt="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+
+
+                                <div class="d-flex flex-row">
+                                    <div class="guy__main">
+                                        <div class="guy__main-name">
+                                            <h3 class="guy__name bebas">Alex Babanine</h3>
+                                            <img src="@asset('/images/05-LP-Head-Alex.png')" class="mx-auto" alt="slide-image" >
+                                        </div>
+                                        <article>
+                                            <p>Growing up, Alex had taken interest in a lot of sports including basketball, football, and karate. But he got a head start with tennis at 4 years old when his mother enrolled him in PeeWee Tennis. 
+                                                <br><br>
+                                            </p>
+                                        </article>
+
+                                         <article>
+                                             <p>Years into the sport, Alex found himself as the highest-ranked Victorian junior for his birth year in 2010. The year after, he travelled to Europe as he participated in the Junior International Tennis Federation tour. In 2012, he entered the Junior Australian Boys Open. That same year, he finished 173rd in the Junior ITF ranking.</p>
+                                            <br>
+                                        </article>   
+
+                                         <article>
+                                             <p>
+                                             On the 20th of August, Babanine recorded an ATP Singles Ranking of 1359. The following year on July 15th, he recorded an ITF Singles Ranking of 1327.
+                                             </p>
+                                         </article>
+                                            
+                                        <div class="soc">
+                                            <ul>
+                                                <li><a target="_blank" href="https://www.instagram.com/alexbabanine">@alexbabanine</a></li>
+                                            </ul>
+                                        </div>  
+                                    </div>
+                                    <div class="slider__img__wrapper">
+                                        <img src="@asset('/images/tennis.png')" alt="">
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                    
+                            </div>
+                            <!-- end slider-for -->
+
+                        </section>
+
+
+
                     </section>
 
             </div>
@@ -300,6 +373,9 @@
     </div>
 </section>
 <!-- END CONTACT -->
+
+
+
 
 
 

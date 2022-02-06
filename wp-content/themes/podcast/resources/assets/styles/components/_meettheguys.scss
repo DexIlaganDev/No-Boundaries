@@ -35,7 +35,7 @@
     --padguy : 1rem;
 
     @media screen and (min-width:767px) {
-        --gname : 2rem;
+        --gname : 2.5rem;
         --gdesc : 1rem;
 
         --padguy : 3rem;
@@ -80,5 +80,218 @@
 
     }//end guy
 
+
+}
+
+
+
+/** SLICK **/
+.mtg{
+
+
+    --userSliderWidth : 1rem;
+    --userHeading : 21px;
+    @media screen and (min-width:992px) {
+            --userSliderWidth : 3rem;
+            --userHeading : 48px;
+    }
+
+
+    &__section{
+        width: var(--wnarrow);
+        margin: 0 auto;
+        position:relative;
+
+        .mtg__previous, .mtg__next{
+
+            display:none;
+            z-index:1;
+
+            @media screen and (min-width: 992px) {
+                    display:block;
+            }
+
+            position:absolute;
+            transform: translateY(-50%);
+            top:40%;
+            color:$secondary;
+            background-color: transparent;
+            outline:none;
+            border:none;
+            font-size:3rem;
+
+            > [class*=fa-]{
+                text-shadow:3px 6px rgba(255,165,0,.75);
+            }
+            
+        }
+        .mtg__previous{
+            left:0px;
+            @media screen and (min-width:992px) {
+                left:-55px;
+            }
+        }
+        .mtg__next{
+            right:0px;
+            @media screen and (min-width:992px) {
+                right:-55px;
+            }
+        }
+
+
+    }
+
+
+
+
+    &__slider{
+
+        //height:80vh;
+        margin-top:1rem;
+
+        @media screen and (min-width:992px) {
+            margin-top:2rem;
+        }
+
+        .d-flex > div {
+            flex: 1 1 100%;
+        }
+
+
+        h3{
+           margin-bottom:1rem;
+           @media screen and (min-width: 992px) {
+               margin-bottom:2rem;
+           }
+        }
+
+        article{
+            line-height: 1.5;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: 500ms transform ease;
+            
+            &:nth-of-type(2){
+                transition-delay: 200ms;
+            }
+
+            &:nth-of-type(3){
+                transition-delay: 280ms;
+            }
+
+            p {
+                font-size:var(--gdesc);
+            }
+
+        } 
+
+
+        .guy__main{
+
+            @media screen and (min-width: 992px) {
+                padding-left:2rem;    
+            }
+
+            &-name{
+                display:flex;
+                flex-direction:column;
+
+                text-align: center;
+
+                @media screen and (min-width:992px) {
+                    text-align: left;
+                }
+
+
+                > * {
+                    flex-basis: 100%;
+                }
+
+                > img {
+                    order:-1;
+                    border-radius: 50%;
+                    width: 200px;
+                    height: 100px;
+                    margin: auto;
+                    display:block;
+                    object-fit: cover;
+                    margin-bottom:1rem;
+                    object-position: center 15%;
+
+                    @media screen and (min-width:992px) {
+                        display:none;
+                    }
+                }
+
+                
+
+            }
+
+        }
+
+        .soc  {
+            margin-top:1rem;
+
+            transform: translateY(100px);
+            opacity: 0;
+            transition: 500ms transform ease;
+            transition-delay:290ms;
+
+            > ul {
+                padding:0;
+                list-style-type: none;
+                li a {
+                    color:$secondary;
+                    text-decoration: none;
+                    font-family: "gotham";
+                    font-weight:500;
+                }
+
+            }
+        }
+
+
+        .slider__img__wrapper {
+
+            display:none;
+
+            transform : translateX( 50px );
+            opacity:0;
+            transition : 500ms transform ease;
+            transition-delay: 100ms;
+
+            @media screen and ( min-width: 992px) {
+                display:block;
+            }
+
+            img {
+                width:100%;
+                height:auto;
+            }
+
+        }
+
+
+        .slick-active{
+            article{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+
+            .soc{
+                transform:translateY(0);
+                opacity:1;
+                
+            }
+
+            .slider__img__wrapper {
+                transform: translateX(0);
+                opacity:1;
+            }
+
+        }
+
+
+    }//end slider
 
 }
