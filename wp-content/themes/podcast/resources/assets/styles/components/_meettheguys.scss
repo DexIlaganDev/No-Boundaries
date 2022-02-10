@@ -286,6 +286,14 @@
             img {
                 width:100%;
                 height:auto;
+
+                @media screen and (min-width:992px) {
+                    margin:auto;
+                    height:581px;
+                    width:auto;
+                    object-fit: fill;
+                }
+
             }
 
         }

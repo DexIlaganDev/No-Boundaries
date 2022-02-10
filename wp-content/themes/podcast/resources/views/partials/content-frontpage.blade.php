@@ -38,11 +38,16 @@
                         <article class="hero-article green-top-border text-center text-md-start">
                             <span class="hero-article--small d-block gotham-normal">with</span>
                             <p class="hero-article--big gotham-medium mt-2 mt-md-2">NICK KYRGIOS,  ALEX BABANINE,<br class="d-none d-md-block">& JAMES FRAWLEY</p>
-                            <p class="hero-article--small hero-article--small-available text-uppercase gotham-normal mt-4 mt-md-4-5">
+                            <p class=" hero-article--small hero-article--small-available text-uppercase gotham-normal mt-4 mt-md-4-5">
                                 Available on <i>Spotify, Apple Podcast, and YouTube</i></p>
                         </article>
-                        <div class="d-flex">
-                            <button class="mx-auto ms-md-auto btn me-md-0 btn-secondary mt-md-4">BROWSE EPISODES <i class="ms-3 fas fa-chevron-right"></i></button>
+                        <div class="d-flex  mt-md-4">
+                            <p class="avail__medium__wrapper">
+                                <span><a target="_blank" href="https://www.youtube.com/channel/UC4bqkbMC3UC-GAK8tQ4zRLw"><img src="@asset('images/09-YouTube-Round-Icon.png')" alt=""></a></span>
+                                <span><a target="_blank" href="https://www.instagram.com/noboundariesshow/"><img src="@asset('images/08-IG-Round-Icon.png')" alt=""></a></span>
+                                <span><a target="_blank" href="https://twitter.com/noboundarieshow"><img src="@asset('images/09-Twitter-Round-Icon.png')" alt=""></a></span>
+                            </p>
+                            <button class="mx-auto ms-md-auto btn me-md-0 btn-secondary align-self-start my-md-auto"><a style="text-decoration:none;" href="https://www.youtube.com/channel/UC4bqkbMC3UC-GAK8tQ4zRLw">BROWSE EPISODES <i class="ms-3 fas fa-chevron-right"></i></a></button>
                         </div>
                     </h1>
                     
@@ -155,7 +160,7 @@
                                         </div>
                                     </div>
                                     <div class="slider__img__wrapper">
-                                        <img src="@asset('/images/tennis.png')" alt="">
+                                        <img src="@asset('/images/01-James---Big-Photo.png')" alt="">
                                     </div>
                                 </div>
                                 <!-- end slide -->
@@ -176,11 +181,11 @@
                                         <div class="soc">
                                             <ul>
                                                 <li><a target="_blank" href="https://www.instagram.com/k1ngkyrg1os">@k1ngkyrg1os</a></li>
-                                            </ul>
+                                            </ul>   
                                         </div>
                                     </div>
                                     <div class="slider__img__wrapper">
-                                        <img src="@asset('/images/tennis.png')" alt="">
+                                        <img src="@asset('/images/01-Nick---Big-Photo.png')" alt="">
                                     </div>
                                 </div>
                                 <!-- end slide -->
@@ -216,7 +221,7 @@
                                         </div>  
                                     </div>
                                     <div class="slider__img__wrapper">
-                                        <img src="@asset('/images/tennis.png')" alt="">
+                                        <img src="@asset('/images/01-Alex---Big-Photo.png')" alt="">
                                     </div>
                                 </div>
                                 <!-- end slide -->
@@ -330,14 +335,25 @@
 
                             <h5 class="contact__card-title card-title gotham-medium">For podcast guest bookings, sponsorship <br>or to simply reach out to us:</h5>
 
+                            <!-- <p class="contact__card-text card-text gotham-medium">
+                                <img class="contact__card-icons me-md-3" src="@asset('images/01-Phonecall-Icon.png')" alt="">  
+                                0123  456  789</p> -->
+
                             <p class="contact__card-text card-text gotham-medium">
-                                <img class="contact__card-icons me-md-3" src="@asset('/images/01-Phonecall-Icon.png')" alt="">  
-                                0123  456  789</p>
-                                <p class="contact__card-text card-text gotham-medium">
-                                    <img class="contact__card-icons me-md-3" src="@asset('/images/02-Email-Envelope-Icon.png')" alt=""> 
-                                    hi@noboundariespodcast.com.au</p>
+                                <img class="contact__card-icons me-md-3" src="@asset('images/02-Email-Envelope-Icon.png')" alt=""> 
+                                noboundariespodcastaus@gmail.com</p>
+
+                            <p class="contact__card-text card-text gotham-medium">
+                            <img class="contact__card-icons me-md-3" src="@asset('images/06-IG-Icon-Contact.png')" alt=""> 
+                            @noboundariesshow</p>
+
+                            <p class="contact__card-text card-text gotham-medium">
+                            <img class="contact__card-icons me-md-3" src="@asset('images/07-Twitter-Icon-Contact.png')" alt=""> 
+                            @noboundariesshow</p>
                                     
-                            
+                            <p class="contact__card-text card-text gotham-medium">
+                            <img class="contact__card-icons me-md-3" src="@asset('images/08-YouTube-Icon-Contact.png')" alt=""> 
+                            No Boundaries Podcast</p>
 
                             </div>
                         </div>
@@ -349,6 +365,27 @@
     </div>
 </section>
 <!-- END CONTACT -->
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
 
 
 
