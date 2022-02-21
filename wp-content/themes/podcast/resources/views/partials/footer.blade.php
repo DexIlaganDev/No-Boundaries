@@ -1,5 +1,5 @@
 <footer>
-  <div class="container text-center d-none">
+  <div class="container text-center">
     <div class="row">
       <div class="col text-center">
         <section class="text-secondary py-5 border-top border-light">
