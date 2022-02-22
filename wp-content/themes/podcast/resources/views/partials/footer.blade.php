@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col text-center">
         <section class="text-secondary py-5 border-top border-light">
-          Created by Collings Media
+          <a href="https://collingsnft.io/">Created by Collings Media</a>
         </section>
       </div>
     </div>

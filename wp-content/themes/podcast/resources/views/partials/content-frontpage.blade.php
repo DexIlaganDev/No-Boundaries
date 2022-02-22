@@ -155,7 +155,7 @@
                                         </article>
                                         <div class="soc">
                                             <ul>
-                                                <li><a target="_blank" href="https://www.instagram.com/james_frawley">@james_frawley</a></li>
+                                                <li><a target="_blank" href="https://www.instagram.com/jamesfrawley_/">@james_frawley</a></li>
                                             </ul>
                                         </div>
                                     </div>
