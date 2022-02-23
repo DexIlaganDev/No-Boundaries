@@ -303,7 +303,7 @@
                                     </section>
                                 </div>
 
-                                <button class="mb-1 mb-md-0 mx-auto ms-md-auto me-md-0 d-block btn btn-light text-uppercase">See More <i class="ms-3 fas fa-chevron-right"></i></button>
+                                <a style="max-width:150px" href="https://www.youtube.com/channel/UC4bqkbMC3UC-GAK8tQ4zRLw" class="mb-1 mb-md-0 mx-auto ms-md-auto me-md-0 d-block btn btn-light text-uppercase">See More <i class="ms-3 fas fa-chevron-right"></i></a>
 
                             </div>
 
