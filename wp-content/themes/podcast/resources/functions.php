@@ -90,3 +90,19 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+    add_action( 'wp_footer', 'mycustom_wp_footer' );
+  
+    function mycustom_wp_footer() {
+    ?>
+    <script type="text/javascript">
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+        document.querySelector('.wpcf7-response-output').remove()
+
+        //show modal
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+        myModal.show()
+
+    }, false );
+    </script>
+    <?php
+    }
